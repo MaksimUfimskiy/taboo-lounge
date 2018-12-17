@@ -1,0 +1,24 @@
+.links-container {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    .links-column{
+        width: 30%;
+        &__header {
+            font-size: 20px;
+            border-bottom: solid 1px #4e4e4e;
+            padding: 10px 0px;
+            font-weight: 300;
+            text-align: left;
+        }
+        &__option {
+            color: #a4a4a4;
+            padding: 5px 0;
+            text-align: left;
+            cursor: pointer;
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}
