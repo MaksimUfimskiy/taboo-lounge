@@ -1,52 +1,183 @@
 .App {
-  text-align: center;
+    text-align: center;
+
+    .overlay {
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+    }
+
+    .video-bg {
+        overflow: hidden;
+        z-index: -100;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        padding-top: 45%;
+        z-index: 2;
+        min-height: 60px;
+        margin-top: 20px;
+
+        &__video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 3;
+        }
+
+        video {
+            object-fit: fill;
+        }
+    }
+
+    .top-bar {
+        padding: 0px;
+        margin-bottom: -15px;
+        margin-top: -2px;
+        text-align: center;
+
+        &__forelock {
+            display: inline-block;
+            color: #fe9d00;
+            padding: 0px 30px 12px 30px;
+            font-size: 18px;
+            border-radius: 0px 0px 20px 20px;
+            margin: 0 auto;
+            background-color: #000;
+            background-image: url(/images/bg.jpg);
+
+            &--bottom-margin {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    .overlay-logo {
+        margin-top: 10%;
+
+        &__pic {
+            width: 25%;
+            min-width: 250px;
+            text-align: center;
+            margin: auto;
+
+            img {
+                min-width: 200px;
+                width: 100%;
+                margin: auto;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .book-table {
+        color: #fe9d00;
+        padding: 15px 30px;
+        border: solid;
+        font-size: 18px;
+        border-radius: 100px;
+        margin: 0 auto;
+        transition: 0.2s;
+    }
+
+    .book-table-link {
+        color: #fe9d00;
+        float: left;
+        margin-top: -22px;
+        padding: 0px 22px;
+        text-decoration: none;
+        font-size: 23px;
+        cursor: pointer;
+    }
+
+    .taboo-menu {
+        display: block;
+        text-align: center;
+        font-size: 50px;
+        line-height: 1;
+        float: left;
+        padding: 19px 45px;
+        color: #fff;
+        cursor: pointer;
+        text-decoration: underline;
+
+        &:hover {
+            color: #fe9d00;
+        }
+    }
+
+    .description-container {
+        padding: 0px 0px 5% 0px;
+    }
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
+.app-footer {
+    padding-bottom: 25px;
 }
 
 .map-container {
-  margin: 15px;
+    margin: 15px;
+}
+
+.map-label {
+    &--bold {
+        font-weight: bold;
+    }
+
+    &--indent {
+        padding-left: 102px;
+    }
 }
 
 .our-address {
-  color: white;
-  text-align: left;
-  padding: 10px 0 0 0;
-  font-size: 25px;
-  margin-bottom: 25px;
+    color: white;
+    text-align: left;
+    padding: 10px 0 0 0;
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 
 .content {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  color: #fff;
-  margin-bottom: 6%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #fff;
+
+    &.indended {
+        padding: 10px;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 6%;
+        margin-bottom: 2%;
+    }
+
+    p {
+        text-align: justify;
+        font-size: 23px;
+        padding: 0px 20px;
+        letter-spacing: 1px;
+        font-weight: 100;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        line-height: 26px;
+    }
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }

@@ -2,8 +2,10 @@
     color: white;
     display: flex;
     justify-content: space-between;
-    .links-column{
+
+    .links-column {
         width: 30%;
+
         &__header {
             font-size: 20px;
             border-bottom: solid 1px #4e4e4e;
@@ -11,14 +13,29 @@
             font-weight: 300;
             text-align: left;
         }
+
         &__option {
             color: #a4a4a4;
             padding: 5px 0;
             text-align: left;
             cursor: pointer;
+
             &:hover {
                 color: white;
             }
+
+            &--highlighted {
+                color: rgb(255, 184, 0);
+                text-align: left;
+                margin: 0px 0px;
+            }
         }
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .links-container .links-column {
+        min-width: 120px;
+        width: auto;
     }
 }

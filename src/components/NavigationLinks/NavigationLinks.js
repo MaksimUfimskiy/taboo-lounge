@@ -10,10 +10,10 @@ export default class NavigationLinks extends React.Component {
                         Навигация
                     </div>
                     <div className="links-column__option">
-                        Главная
+                        <a href="/">Главная</a>
                     </div>
                     <div className="links-column__option">
-                        Меню
+                        <a href="/images/taboo-menu.jpeg" target="_blank">Меню</a>
                     </div>
                 </div>
                 <div className="links-column">
@@ -21,10 +21,10 @@ export default class NavigationLinks extends React.Component {
                         Соц Сети
                     </div>
                     <div className="links-column__option">
-                        Вконтакте
+                        <a href="https://vk.com/taboo_lounge18" target="_blank" rel="noopener noreferrer">VK</a>
                     </div>
                     <div className="links-column__option">
-                        Instagram
+                        <a href="https://www.instagram.com/taboo_lounge18/" target="_blank" rel="noopener noreferrer">Instagram</a>
                     </div>
                 </div>
                 <div className="links-column">
@@ -32,10 +32,10 @@ export default class NavigationLinks extends React.Component {
                         Контакты
                     </div>
                     <div className="links-column__option">
-                        xxxxxxxxx@gmail.com
+                        <a href="mailto:taboolounge@yandex.ru" className="links-column__option--highlighted">taboolounge@yandex.ru</a>
                     </div>
                     <div className="links-column__option">
-                        +7 (xxx) xxx-xx-xx
+                        <a href="tel:+7-919-911-49-42" className="links-column__option--highlighted">+7 (919) 911-49-42</a>
                     </div>
                 </div>
             </div>
